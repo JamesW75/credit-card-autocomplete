@@ -1,5 +1,5 @@
-# credit-card-autocomplete
-Testing the autocomplete attributes for Credit Cards stored in the web browser
+# Credit Card Autocomplete
+Testing the autocomplete attributes for Credit Cards stored in the web browser.
 
 References
 * https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill-field
