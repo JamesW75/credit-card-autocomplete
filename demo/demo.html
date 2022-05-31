@@ -4,9 +4,46 @@ Credit Card Autocomplete Test
 </h1>
 
 <h2>Name</h2>
-  
-<input id="nm_card_holder" autocomplete="cc-name" maxlength="100" type="text" />
-                 
+Full name in one field, or split across 3 fields.
+<table>
+<tr><td>cc-name</td></tr>
+<tr><td>
+<input id="cc_name" autocomplete="cc-name" maxlength="100" type="text" />
+</td></tr>
+<tr><td>cc-given-name</td><td>cc-additional-name</td><td>cc-family-name</td></tr>
+<tr><td>
+<input id="cc_given_name" autocomplete="cc-given-name" maxlength="100" type="text" />
+</td><td>
+<input id="cc_additional_name" autocomplete="cc-additional-name" maxlength="100" type="text" />
+</td><td>
+<input id="cc_family_name" autocomplete="cc-family-name" maxlength="100" type="text" />
+</td></tr>
+</table>
+
+<h2>Card Number/CSC</h2>
+Card number and CVV.
+<table>
+<tr><td>cc-number</td><td>cc-csc</td></tr>
+<tr><td>
+<input id="cc_number" autocomplete="cc-number" type="text" />
+</td>
+<td>
+<input id="cc_csc" autocomplete="cc-csc" type="text" />
+</td>
+</tr>
+</table>
+
+
+
+<h2>Card Type</h2>
+
+<table>
+<tr><td>cc-type</td></tr>
+<tr><td>
+<input id="cc_type" autocomplete="cc-type" type="text" />
+</td></tr>
+</table>
+
 <h2>Expiry Date</h2>
 <p>The maxlength attribute directed Chrome to use a certain pattern for the year and full expiry.</p>
 <table>
