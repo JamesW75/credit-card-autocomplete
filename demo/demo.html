@@ -1,34 +1,40 @@
 <form>
-<h1>
-Credit Card Autocomplete Test
-</h1>
+<h1>Credit Card Autocomplete Test</h1>
 
+  
 <h2>Name</h2>
-Full name in one field, or split across 3 fields.
+<p>Full name in one field, or split across 3 fields.</p>
+  
 <table>
 <tr><td>cc-name</td></tr>
 <tr><td>
-<input id="cc_name" autocomplete="cc-name" maxlength="100" type="text" />
+<input id="cc_name"            autocomplete="cc-name"            maxlength="100" type="text" />
 </td></tr>
-<tr><td>cc-given-name</td><td>cc-additional-name</td><td>cc-family-name</td></tr>
+<tr>
+  <td>cc-given-name</td>
+  <td>cc-additional-name</td>
+  <td>cc-family-name</td></tr>
 <tr><td>
-<input id="cc_given_name" autocomplete="cc-given-name" maxlength="100" type="text" />
+<input id="cc_given_name"      autocomplete="cc-given-name"      maxlength="100" type="text" />
 </td><td>
 <input id="cc_additional_name" autocomplete="cc-additional-name" maxlength="100" type="text" />
 </td><td>
-<input id="cc_family_name" autocomplete="cc-family-name" maxlength="100" type="text" />
+<input id="cc_family_name"     autocomplete="cc-family-name"     maxlength="100" type="text" />
 </td></tr>
 </table>
 
-<h2>Card Number/CSC</h2>
-Card number and CVV.
+  
+  
+<h2>Card Number/CVV</h2>
+  <p>Card number and CVV.</p>
+  
 <table>
 <tr><td>cc-number</td><td>cc-csc</td></tr>
 <tr><td>
-<input id="cc_number" autocomplete="cc-number" type="text" />
+<input id="cc_number"          autocomplete="cc-number"          type="text" />
 </td>
 <td>
-<input id="cc_csc" autocomplete="cc-csc" type="text" />
+<input id="cc_csc"             autocomplete="cc-csc"             type="text" />
 </td>
 </tr>
 </table>
@@ -46,8 +52,8 @@ Card number and CVV.
 
 <h2>Expiry Date</h2>
 <p>The maxlength attribute directed Chrome to use a certain pattern for the year and full expiry.</p>
+  
 <table>
-
 <tr><th>Field</th>       <th>Max Length</th><th>&nbsp;</th></tr>
 <tr><td>cc-exp</td>      <td>none</td><td><input type="text" id="cc_exp"       autocomplete="cc-exp"   />  </td></tr>
 <tr><td>cc-exp</td>      <td>4</td>   <td><input type="text" id="cc_exp4"      autocomplete="cc-exp" maxlength="4" />  </td></tr>
